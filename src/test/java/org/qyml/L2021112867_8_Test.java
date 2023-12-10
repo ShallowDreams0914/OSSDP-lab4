@@ -143,6 +143,12 @@ public class L2021112867_8_Test {
                 {'0','0','1','1','0'},
                 {'0','0','1','0','0'}};
         Assert.assertEquals(3, sol.numIslands(grid5));
+        char[][] grid7 = {{'0'},
+                {'0'},
+                {'0'},
+                {'0'}};
+        Assert.assertEquals(0, sol.numIslands(grid7));
+
 
     }
 }

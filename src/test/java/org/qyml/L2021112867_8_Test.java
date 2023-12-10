@@ -108,6 +108,21 @@ public class L2021112867_8_Test {
         Assert.assertEquals(3, sol.numIslands(grid5));
     }
 
+    @Test
+    public void testSideLenOver2() {
+        //岛屿数量为0
+        char[][] grid1 = {{'0', '0', '0', '0', '0'},
+                {'0', '0', '0', '0', '0'},
+                {'0', '0', '0', '0', '0'},
+                {'0', '0', '0', '0', '0'}};
+        Assert.assertEquals(0, sol.numIslands(grid1));
 
+        //岛屿数量为1且为非聚合的
+        char[][] grid2 = {{'0', '0', '0', '0', '0'},
+                {'0', '0', '1', '0', '0'},
+                {'0', '0', '0', '0', '0'},
+                {'0', '0', '0', '0', '0'}};
+        Assert.assertEquals(1, sol.numIslands(grid2));
 
+    }
 }

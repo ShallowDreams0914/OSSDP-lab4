@@ -108,5 +108,13 @@ public class L2021112867_8_Test {
         Assert.assertEquals(3, sol.numIslands(grid5));
     }
 
+    @Test
+    public void testFail(){
+        char[][] grid2 = {{'0','0','0','0','0'},
+                {'0','0','1','0','0'},
+                {'0','0','0','0','0'},
+                {'0','0','0','0','0'}};
+        Assert.assertEquals(2, sol.numIslands(grid2));
+    }
 
 }
